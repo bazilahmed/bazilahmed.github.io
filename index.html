@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My blogs</title>
-        <h1>Welcome to Bazil's blog</h1>
-    </head>
-    <body>
-        <p>This page is perfect!</p>
-    </bodY>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <title>The Yelp project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">    
+    <link href="CSS/mystyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- The navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">The Yelp Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="analysis.html">Analysis</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Data</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="cl-1">The Yelp Project</h1>
+      <h5 class="text-muted">Analyzing the Yelp dataset to draw correlations between various factors affecting the success of a
+      restaurant.</h5>
+    </div>
+  </div>
+
+  <div class="container my-cont-1">
+    <div class="row">
+      <div class="col-sm-7">
+        <h4 class="cl-1">Yelp Open Dataset<br>
+          <small class="text-muted">An all-purpose dataset for learning.</small></h4>
+        <p>The Yelp dataset is a subset of Yelp's businesses, reviews, and user data for use in personal,
+          educational, and academic purposes.
+          It's available as JSON files to be used for various academic purposes.
+        </p>
+        <hr>
+        <h4 class="cl-1">Dataset Summary</h4>
+       <p>1,223,094 tips by 1,637,138 users<br>
+        Over 1.2 million business attributes like hours, parking, availability, and ambience<br>
+        Aggregated check-ins over time for each of the 192,609 businesses</p>
+        <hr>
+        <h4 class="cl-1">The Dataset Challenge</h4>
+        <p>Yelp has created a challenge for students to use their data in innovative ways and break ground in research.<br>
+            It's a chance for students to conduct research or analysis on Yelp dataset and share their discoveries with Yelp.
+            For instance, trying to figure out how food trends start or identify the impact of different connections from the local graph,
+             how do user's relationships define their usage patterns? Where are the trend setters eating before it becomes popular? Photo classification,
+             Natural Language Processing & Sentiment Analysis, etc.<br>
+             For more detail on it please click <a href="https://www.yelp.com/dataset/challenge" target="_blank">here.</a>
+        </p>
+      </div>
+      <div class="col-sm-5">
+        <svg></svg>
+        <!-- globe gets added here -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="app.js"></script>
+</body>
 
 
 </html>
+
+
+
+

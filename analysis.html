@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <title>The Yelp project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="CSS/mystyle.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- The navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">The Yelp Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="analysis.html">Analysis</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Data</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+  </div>
+
+  <div class="container my-cont-2">
+    <div class="row">
+      <h4 class="cl-1">Analysis Summary</h4>
+      <p>
+        The objective of this project is to analyze the Yelp dataset and draw correlations between various factors affecting the success of a
+        restaurant.<br>
+        In order to determine a restaurant's success, the attributes of the restaurant that defines its success were
+        listed down first. For this dataset I have considered a restaurant's Star rating. Yelp businesses are rated on a scale
+        of 5 with a unit of 0.5. Secondly, only the businesses which are 'restaurants' were considered in the scope of this
+        analysis and hence a subset of the data was taken. Lastly, other attributes of the restaurants were used to find
+        associations with the star ratings to draw meaningful conclusions. Additionally, external factors like the population,
+        weather, etc. were also taken into account to find the correlations with the restaurant's star rating.<br><br>
+
+        Based on the analysis these were the conclusions made:
+        <!-- <ol>
+          <li>
+            <p class="text-success">
+              Noise levels only affect the ratings when they its <a href=graph1.html target="_blank">too loud</a>
+              </p>
+          </li>
+          <li>
+            <p class="text-info" >
+              blah blah <a href="graph2.html" target="_blank">blah</a>
+            </p>
+          </li>
+          <li>
+            <p class="text-warning">
+              blah blah <a href="graph3.html" target="_blank">blah</a>
+            </p>
+          </li>
+          <li>
+            <p class="text-danger">
+              blah blah <a href="graph4.html" target="_blank">blah</a>
+            </p>
+          </li>
+        </ol> -->
+      </p>
+      </div>
+  </div>
+  <div class="container my-cont-3">
+    <div class="row">
+      <div class="col-sm-12" align="center">
+        <p class="text-info"><strong>Star Rating Vs Noise Level</strong></p>
+        <img src="Images/Restaurants_Heat_map_1.jpg" alt="Image" style="margin:10px">
+        <p class="my-txt-aln1">The subset of data from Yelp contains reviews for total of 59,387 restaurants. The concentration of these restaurants can be seen in the marked areas on the map. The heat map shows the weight of total number of reviews in red for restaurants in a specific area.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" align="center">
+        <p class="text-info"><strong>Population Density Vs Restaurants' Rating</strong></p>
+        <img src="Images/Restaurants Rating Vs Population Density.jpg" alt="Image" style="margin:10px">
+        <p class="my-txt-aln1">The cities with higher population density also average around 3.5 stars for restaurants compared to those with less population density. There is no causal relationship between population density and restaurants' ratings.  For this analysis Population density by City, State from the Census Bureau was used and merged with the Yelp dataset.</p>
+      </div>
+    <div class="col-sm-6" align="center">
+      <p class="text-info"><strong>Restaurants' Rating Vs Alcohol Type Served</strong></p>
+      <img src="Images/Restaurants Rating Vs Alcohol Type Served.jpg" alt="Image" style="margin:10px">
+      <p class="my-txt-aln1">The restaurants that served Beer and Wine have the highest average ratings compared to Full Bar and the restaurants that don't serve alcohol at all. For this an average was calculated per Alcohol Type Served category and plotted against the ratings.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6" align="center">
+        <p class="text-info"><strong>Restaurants' Rating Vs Noise Level</strong></p>
+        <img src="Images/Star Rating Vs Noise Level.jpg" alt="Image" style="margin:10px">
+        <p class="my-txt-aln1">Noise levels only affect the ratings when they its too loud Noise levels only affect the ratings when they its too loudNoise levels only affect the ratings when they its too loudNoise levels only affect the ratings when they its too loudNoise levels only affect the ratings when they its too loudNoise levels only affect the ratings when they its too loud</p>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</body>
+
+
+</html>
+
+
+
+

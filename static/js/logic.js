@@ -1,6 +1,6 @@
 // Creating map object
 var myMap = L.map("clusterMap", {
-  center: [39.0119, -98.4842],
+  center: [37.8393, -84.2700],
   zoom: 5
 });
 

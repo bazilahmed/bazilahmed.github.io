@@ -54,4 +54,10 @@ body {
     height: auto;
     /* width: auto; */
   }
+  #heatMap,
+  #clusterMap {
+  height: 500px;
+  padding: 30px;
+  }
+
   
